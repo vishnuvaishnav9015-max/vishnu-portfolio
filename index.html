@@ -1250,24 +1250,7 @@ const observer = new IntersectionObserver((entries) => {
 revealTargets.forEach(el => observer.observe(el));
 
 // ============ CONTACT FORM ============
-const form = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const data = new FormData(form);
-  const name = data.get('name');
-
-  formStatus.style.color = 'var(--primary-2)';
-  formStatus.textContent = 'Sending message...';
-
-  setTimeout(() => {
-    formStatus.style.color = '#22d3ee';
-    formStatus.textContent = `Thanks ${name}! Your message has been received. I'll get back to you soon.`;
-    form.reset();
-    setTimeout(() => (formStatus.textContent = ''), 5000);
-  }, 900);
-});
 
 // ============ SMOOTH ANCHOR OFFSET ============
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1283,6 +1266,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+emailjs.init({publicKey:"5tTfZ4VeQo5KWMU6S"});
+const form=document.getElementById("contactForm");const status=document.getElementById("formStatus");if(form){form.addEventListener("submit",function(e){e.preventDefault();status.textContent="Sending...";emailjs.sendForm("vishnu_portfolio","template_6ik7glt",this).then(()=>{status.textContent="Message sent successfully!";form.reset();},err=>{status.textContent="Failed to send message.";console.error(err);});});}
 </script>
 </body>
 </html>
