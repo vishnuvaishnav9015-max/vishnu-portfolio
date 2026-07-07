@@ -102,7 +102,7 @@ export function HomePage() {
                 <a href="#projects" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary-600 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-primary-500/30 hover:-translate-y-0.5 transition-all">
                   View Projects <ArrowRight className="w-4 h-4" />
                 </a>
-                <a href="#" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-surface-300 dark:border-surface-600 text-surface-900 dark:text-white font-semibold hover:bg-surface-100 dark:hover:bg-surface-800 hover:border-surface-400 dark:hover:border-surface-500 transition-all">
+                <a href="/images/Vishnu_Vaishnav_Resume.pdf" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-surface-300 dark:border-surface-600 text-surface-900 dark:text-white font-semibold hover:bg-surface-100 dark:hover:bg-surface-800 hover:border-surface-400 dark:hover:border-surface-500 transition-all">
                   <Download className="w-4 h-4" /> Download CV
                 </a>
               </div>
@@ -205,7 +205,7 @@ export function HomePage() {
                 ))}
               </div>
 
-              <a href="#" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary-600 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-primary-500/30 transition-all">
+              <a href="/images/Vishnu_Vaishnav_Resume.pdf" className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary-600 to-cyan-500 text-white font-semibold hover:shadow-lg hover:shadow-primary-500/30 transition-all">
                 <Download className="w-4 h-4" /> Download CV
               </a>
             </div>
